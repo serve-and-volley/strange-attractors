@@ -1,0 +1,85 @@
+<html>
+<head>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script src="https://raw.github.com/deanm/pre3d/master/pre3d.js"></script>
+<script src="https://raw.github.com/deanm/pre3d/master/pre3d_path_utils.js"></script>
+<script src="https://raw.github.com/deanm/pre3d/master/demos/demo_utils.js"></script>
+<script src="lorenzSystemRungaKutta.js"></script>
+
+<style type="text/css">
+  body {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFF;
+  	font-size: 15px;
+  	line-height: 25px;
+  	font-weight: 400;
+  	background: #000;
+  }
+  .left {
+    width: 320px;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 0px;
+  }
+  canvas {
+    float: left;
+    line-height: 0; 
+    -webkit-box-shadow: 0px 1px 4px 0px 
+    rgba(0, 0, 0, .75); 
+    box-shadow: 0px 1px 4px 0px 
+    rgba(0, 0, 0, .75); 
+    display: block; 
+    -webkit-user-select: none;"    
+  }
+</style>
+
+</head>
+
+<body>
+    
+<div class ="left" >
+  <h2>The Lorenz attractor</h2>
+  <p>(Using the Runge-Kutta 4th-order method)</p>
+  <h3>The Lorenz system</h3>
+  $$
+  \begin{aligned}
+  \frac{dx}{dt} & = \sigma(y - x) \\
+  \frac{dy}{dt} & = x(\rho - z) - y \\
+  \frac{dz}{dt} & = xy - \beta z \\
+  \end{aligned}
+  $$
+  <h3>Parameters</h3>
+  $$
+  \begin{aligned}
+  \sigma & = 10.0 \\
+  \rho & = 28.0 \\
+  \beta & = 8.0/3.0 \\
+  \end{aligned}
+  $$
+  <h3>Initial conditions</h3>
+  $$
+  \begin{aligned}
+  (x_0, y_0, z_0) & = (1, 0, 0) \\
+  \text{Step size: } h & = 0.01 \\
+  t & = 10000
+  \end{aligned}
+  $$
+  <p>
+  [Use Shift + Mouse to scale the 3D rendering.
+  </p>
+</div>
+
+<canvas id="canvas" height="700" width="700">
+  Sorry, this demo requires a web browser which supports HTML5 canvas!
+</canvas>
+
+</div>
+</body>
+</html>
