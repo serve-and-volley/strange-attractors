@@ -1,9 +1,3 @@
-// (c) Dean McNamee <dean@gmail.com>.  All rights reserved.
-
-// Inspired by http://www.unitzeroone.com/labs/alchemyPushingPixels/
-// Also reading 'Strange Attractors: Creating Patterns in Chaos'.
-// This attractor is Lorenz-84, with parameters from chaoscope.
-
 window.addEventListener('load', function() {
   var screen_canvas = document.getElementById('canvas');
   var renderer = new Pre3d.Renderer(screen_canvas);
