@@ -95,7 +95,7 @@ window.addEventListener('load', function() {
     {n: 'w', c: new Pre3d.RGBA(1, 1, 1, 1)}
   ];
 
-  var fgcolor = new Pre3d.RGBA(1, 1, 0, 1);
+  var fgcolor = new Pre3d.RGBA(0, 0, 1, 1);
 
   function draw() {
     renderer.ctx.setFillColor(0, 0, 0, 1);
